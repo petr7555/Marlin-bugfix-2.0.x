@@ -1,3 +1,20 @@
+# My notes:
+- I followed https://www.youtube.com/watch?v=38PkynA1uGI&t=656s to install Marlin 2.0 bugfix (downloaded as zip from https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x) with default Anet A6 configuration from https://github.com/MarlinFirmware/Configurations/tree/import-2.0.x
+- My board is Anet v1.0.
+- It apparently has bootloader, otherwise Marlin 2.0 could not install.
+- There is Anet v1.7 board available (https://www.aliexpress.com/item/4000021911544.html?spm=a2g0o.productlist.0.0.18b41abcKu4Atd&algo_pvid=dfc62c08-6034-4602-9480-878a707e40ca&algo_exp_id=dfc62c08-6034-4602-9480-878a707e40ca-10), but it is not required and I would need to do the wiring (fan, sensor, ...) again on the new board
+- If I were to replace the board, it is better to use one of these:
+   - BIGTREETECH SKR V1.4: https://www.aliexpress.com/item/4000474140713.html?spm=a2g0o.productlist.0.0.46cd6a42odekso&algo_pvid=b383727f-b31c-40fe-b23c-fa61ae0e4d30&algo_exp_id=b383727f-b31c-40fe-b23c-fa61ae0e4d30-0
+   - 3D Printer Kit Mega 2560 R3 + 1Pcs RAMPS 1.4 Controller + 5Pcs A4988 Stepper Driver Module RAMPS 1.4 2004 LCD Control: https://www.aliexpress.com/item/1005001631916842.html?spm=a2g0o.productlist.0.0.5e167632VoSWAl&algo_pvid=68b21c0f-c3c4-4d0a-81fa-9aec65d49fa5&aem_p4p_detail=202107301408162531515778239560008640342&algo_exp_id=68b21c0f-c3c4-4d0a-81fa-9aec65d49fa5-2
+- I needed to click build twice, because the first run failed.
+- Upload of **sanguino1284p** failed, as if I did not have a bootloader
+- Upload of **sanguino1284p_optimized** worked!
+- Then I set capacitive sensor up with this tutorial: https://www.youtube.com/watch?v=iwhbeD2AduA
+- The configuration changes can be seen in git: https://github.com/petr7555/Marlin-bugfix-2.0.x 
+- Some other features can be disabled to save memory: https://crosslink.io/marlin-2-0-memory-usage-by-feature/
+- During the print, double-clicking the knob enables babystepping. Turn the knob to adjust the Z offset, which will be persisted until the printer is restarted. Or save it using M500.
+
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
