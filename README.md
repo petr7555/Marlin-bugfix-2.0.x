@@ -1,5 +1,5 @@
 # My notes:
-- I followed https://www.youtube.com/watch?v=38PkynA1uGI&t=656s to install Marlin 2.0 bugfix (downloaded as zip from https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x) with default Anet A6 configuration from https://github.com/MarlinFirmware/Configurations/tree/import-2.0.x
+- I followed https://www.youtube.com/watch?v=38PkynA1uGI to install Marlin 2.0 bugfix (downloaded as zip from https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x) with default Anet A6 configuration from https://github.com/MarlinFirmware/Configurations/tree/import-2.0.x
 - My board is Anet v1.0.
 - It apparently has bootloader, otherwise Marlin 2.0 could not install.
 - There is Anet v1.7 board available (https://www.aliexpress.com/item/4000021911544.html?spm=a2g0o.productlist.0.0.18b41abcKu4Atd&algo_pvid=dfc62c08-6034-4602-9480-878a707e40ca&algo_exp_id=dfc62c08-6034-4602-9480-878a707e40ca-10), but it is not required and I would need to do the wiring (fan, sensor, ...) again on the new board
@@ -13,7 +13,8 @@
 - The configuration changes can be seen in git: https://github.com/petr7555/Marlin-bugfix-2.0.x 
 - Some other features can be disabled to save memory: https://crosslink.io/marlin-2-0-memory-usage-by-feature/
 - During the print, double-clicking the knob enables babystepping. Turn the knob to adjust the Z offset, which will be persisted until the printer is restarted. Or save it using M500.
-
+- *Arduino IDE required Anet board definition (https://github.com/SkyNet3D/anet-board),
+but PlatformIO IDE VSCode plugin probably does not need it.
 
 # Marlin 3D Printer Firmware
 
