@@ -13,7 +13,7 @@
 - The configuration changes can be seen in git: https://github.com/petr7555/Marlin-bugfix-2.0.x 
 - Some other features can be disabled to save memory: https://crosslink.io/marlin-2-0-memory-usage-by-feature/
 - During the print, double-clicking the knob enables babystepping. Turn the knob to adjust the Z offset, which will be persisted until the printer is restarted. Or save it using M500.
-- *Arduino IDE required Anet board definition (https://github.com/SkyNet3D/anet-board),
+- Arduino IDE required Anet board definition (https://github.com/SkyNet3D/anet-board),
 but PlatformIO IDE VSCode plugin probably does not need it.
 
 # Marlin 3D Printer Firmware
